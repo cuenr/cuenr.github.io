@@ -19,9 +19,6 @@ Set after the long drift through space, the project follows an astronaut who arr
 ## 💡 Attribution
 If you use this project in your own work, please provide credit to the author. 
 
-**Author:** Ming-Jyun Hung  
-**Source:** [https://mingjyunhung.com/](https://mingjyunhung.com/)
-
 
 ---
 
