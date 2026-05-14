@@ -4,13 +4,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import ThreeSixtyIcon from '@mui/icons-material/ThreeSixty';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
-interface SideBarProps {
-    onTogglePortfolio: () => void;
-}
-
-export function SideBar({ onTogglePortfolio }: SideBarProps) {
+export function SideBar() {
     const isMobile = useGameStore((state) => state.isMobile);
     
     const cameraMode = useGameStore((state) => state.cameraMode);
@@ -81,12 +76,6 @@ export function SideBar({ onTogglePortfolio }: SideBarProps) {
             zIndex: 50,
         }}>
             
-            <Tooltip title="Portfolio" placement="left">
-                <IconButton sx={btnStyle} onClick={onTogglePortfolio}>
-                    <InfoOutlinedIcon sx={iconBaseStyle} />
-                </IconButton>
-            </Tooltip>
-
             <Tooltip title={ qualityTooltip } placement="left">
                 <IconButton sx={btnStyle} onClick={toggleQuality}>
                     <AutoAwesomeIcon sx={qualityIconStyle} />

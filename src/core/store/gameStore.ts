@@ -45,6 +45,10 @@ interface GameState {
   isControlEnabled: boolean; 
   setControlEnabled: (enabled: boolean) => void;
 
+  // ===== Alien Interaction State =====
+  activeAlien: 'about' | 'projects' | 'resume' | null;
+  setActiveAlien: (alien: 'about' | 'projects' | 'resume' | null) => void;
+
   // ===== WebGPU State =====
   gpuError: string | null;
   setGpuError: (error: string | null) => void;
@@ -93,6 +97,10 @@ export const useGameStore = create<GameState>((set, get) => ({
 
   isControlEnabled: false,
   setControlEnabled: (enabled) => set({ isControlEnabled: enabled }),
+
+  // ===== Alien Interaction State =====
+  activeAlien: null,
+  setActiveAlien: (alien) => set({ activeAlien: alien }),
 
   // ===== WebGPU State =====
   gpuError: null,

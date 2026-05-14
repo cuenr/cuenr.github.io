@@ -1,16 +1,14 @@
-import { useState } from "react";
 import { useGameStore } from "../core/store/gameStore";
 import { LoadingScreen } from "./LoadingScreen";
 import AudioButton from "./AudioButton";
 import { SideBar } from "./SideBar";
-import { PortfolioPanel } from "./PortfolioPanel";
+import { AlienPanel } from "./AlienPanel";
 import { TouchJoystick } from "../core/input/TouchJoystick";
 import { input } from "../core/input/controls";
 
 export function UI() {
     const isMobile = useGameStore((state) => state.isMobile);
     const isControlEnabled = useGameStore((state) => state.isControlEnabled);
-    const [portfolioOpen, setPortfolioOpen] = useState(false);
 
     return (
         <div style={{
@@ -23,7 +21,7 @@ export function UI() {
             zIndex: 10 // Ensure UI is above Canvas
         }}>
             <LoadingScreen />
-            <PortfolioPanel open={portfolioOpen} onClose={() => setPortfolioOpen(false)} />
+            <AlienPanel />
 
             <div style={{
                 position: 'absolute',
@@ -35,7 +33,7 @@ export function UI() {
                 transition: `opacity 0.5s ease, visibility 0s linear ${isControlEnabled ? '0s' : '0.5s'}`
             }}>
                 <AudioButton />
-                <SideBar onTogglePortfolio={() => setPortfolioOpen((o) => !o)} />
+                <SideBar />
 
                 {isMobile &&
                     <TouchJoystick
