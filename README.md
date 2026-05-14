@@ -5,11 +5,6 @@
 
 </br>
 
-🔗 **[Live Demo](https://false-earth.mingjyunhung.com/)**
-🔗 **[Article](https://tympanus.net/codrops/2026/04/21/false-earth-from-webgl-limits-to-a-webgpu-driven-world/)**
-
-
-**False Earth** is an interactive WebGPU experience that continues the journey of [Drift](https://github.com/momentchan/drift) - presenting a continuous landscape generated in real time through GPU-based simulations.
 
 
 
