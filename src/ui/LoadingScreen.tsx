@@ -165,7 +165,7 @@ export function LoadingScreen() {
                         letterSpacing: isMobile ? '0.3rem' : '0.5rem',
                         marginBottom: isMobileLandscape ? '1rem' : '2rem',
                     }}>
-                        FALSE EARTH
+                        ROBERTO CUEN
                     </div>
 
                     {/* Intro Text */}
@@ -177,14 +177,13 @@ export function LoadingScreen() {
                         fontSize: isMobileLandscape ? '0.75rem' : 'inherit',
                     }}>
                         <p>
-                            After drifting beyond the edge of space, the journey reaches ground again.
-                            A surface extends in every direction, without a visible boundary.
-                            No matter how far it continues, the horizon does not draw closer.
+                            At the intersection of finance and computation, patterns emerge.
+                            Each model trained, each pipeline built, leaves a trace in the data.
                         </p>
 
                         <p>
-                            With each step, something descends and alters the surface, leaving traces behind.
-                            The drift does not end here; it continues in another form.
+                            M.S. Computer Engineering · NYU · 2027<br />
+                            B.S. Finance · University of South Florida
                         </p>
 {/* 
                         {!gpuError && (
